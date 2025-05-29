@@ -188,6 +188,15 @@
 
             tap-ms = <20>;
         };
+
+        mo_scrole: mo_scrole {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+            label = "MO_SCROLE";
+        };
     };
 
     keymap {
@@ -201,7 +210,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN                   &kp BACKSPACE  &kp ENTER                                 &kp UNDERSCORE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
 
         layer_1 {
@@ -212,7 +221,7 @@
 &trans      &trans    &trans  &lt 1 INT_HENKAN  &lt 2 SPACE  &lt 3 INT_MUHENKAN            &trans  &trans                      &moI
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
 
         layer_2 {
@@ -223,7 +232,7 @@
 &trans  &trans  &trans  &lt 4 INT_HENKAN  &lt 2 SPACE  &lt 5 INT_MUHENKAN            &trans  &trans                                             &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
 
         layer_3 {
@@ -234,7 +243,7 @@
 &trans   &trans   &trans  &lt 1 INT_HENKAN  &lt 2 SPACE  &lt 3 INT_MUHENKAN            &trans  &trans                                   &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
 
         layer_4 {
@@ -245,7 +254,7 @@
 &bt BT_CLR_ALL  &trans         &trans         &trans         &trans         &trans                 &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
 
         layer_5 {
@@ -256,7 +265,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                &trans           &trans                                                           &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
 
         MOUSE {
@@ -267,7 +276,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                              &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mo_scrole>;
         };
     };
 };
