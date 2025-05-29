@@ -198,7 +198,7 @@
 &kp Q           &kp W         &kp E         &kp R               &kp T                                           &kp Y          &kp U      &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))       &kp MINUS      &kp H          &kp J      &kp K      &kp L    &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V        &kp B               &kp SEMICOLON  &kp N          &kp M      &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN                   &kp BACKSPACE  &kp ENTER                                 &kp DEL
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN                   &kp BACKSPACE  &kp ENTER                                 &kp UNDERSCORE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -217,10 +217,10 @@
 
         layer_2 {
             bindings = <
-&kp N1  &mo2    &kp N3  &kp N4            &kp N5                                     &mo6    &mo7    &mo8             &mo9             &mo0
-&trans  &trans  &trans  &trans            &trans       &trans                &trans  &trans  &trans  &trans           &kp C_MENU_UP    &trans
-&trans  &trans  &trans  &trans            &trans       &trans                &trans  &trans  &trans  &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
-&trans  &trans  &trans  &lt 4 INT_HENKAN  &lt 2 SPACE  &lt 5 INT_MUHENKAN            &trans  &trans                                                      &trans
+&kp N1  &mo2    &kp N3  &kp N4            &kp N5                                     &mo6    &mo7    &mo8            &mo9            &mo0
+&trans  &trans  &trans  &trans            &trans       &trans                &trans  &trans  &trans  &trans          &kp UP_ARROW    &trans
+&trans  &trans  &trans  &trans            &trans       &trans                &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&trans  &trans  &trans  &lt 4 INT_HENKAN  &lt 2 SPACE  &lt 5 INT_MUHENKAN            &trans  &trans                                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -231,7 +231,7 @@
 &kp F1   &kp F2   &kp F3  &kp F4            &kp F5                                     &kp F6  &kp F7  &kp F8  &kp F9    &kp F10
 &kp F11  &kp F12  &trans  &trans            &trans       &trans                &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_UP
 &trans   &trans   &trans  &trans            &trans       &trans                &trans  &trans  &trans  &trans  &kp END   &kp PAGE_DOWN
-&trans   &trans   &trans  &lt 1 INT_HENKAN  &lt 2 SPACE  &lt 3 INT_MUHENKAN            &trans  &trans                                   &trans
+&trans   &trans   &trans  &lt 1 INT_HENKAN  &lt 2 SPACE  &lt 3 INT_MUHENKAN            &trans  &trans                                   &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
