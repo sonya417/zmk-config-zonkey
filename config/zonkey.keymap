@@ -202,7 +202,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "VOL";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+            bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
         };
     };
 
