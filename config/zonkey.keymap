@@ -197,6 +197,13 @@
             tap-ms = <20>;
             label = "MO_SCROLE";
         };
+
+        vol: vol {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VOL";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+        };
     };
 
     keymap {
@@ -232,7 +239,7 @@
 &trans  &trans  &trans  &lt 4 INT_HENKAN  &lt 2 SPACE  &lt 5 INT_MUHENKAN            &trans  &trans                                             &trans
             >;
 
-            sensor-bindings = <&mo_scrole>;
+            sensor-bindings = <&vol>;
         };
 
         layer_3 {
